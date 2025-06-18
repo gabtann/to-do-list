@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List Advance</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List Gabriel 🚀</h1>
+
+    <div class="controls">
+      <input type="text" id="taskInput" placeholder="Tulis tugasmu..." />
+      <button onclick="addTask()">Tambah</button>
+      <button onclick="toggleDarkMode()">🌗 Mode</button>
+    </div>
+
+    <div class="filters">
+      <button onclick="filterTasks('all')">Semua</button>
+      <button onclick="filterTasks('pending')">Belum</button>
+      <button onclick="filterTasks('completed')">Selesai</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
